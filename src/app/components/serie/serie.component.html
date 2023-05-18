@@ -1,1 +1,10 @@
-<p>serie works!</p>
+<div>
+  <input type="text" [(ngModel)]="searchTerm" placeholder="Seach" />
+  <ul>
+    <li *ngFor="let letter of alphabet">
+      <button (click)="handleClick(letter)">
+        {{ letter }}
+      </button>
+    </li>
+  </ul>
+</div>

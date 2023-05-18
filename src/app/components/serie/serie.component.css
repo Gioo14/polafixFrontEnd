@@ -1,0 +1,44 @@
+div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  background-color: white;
+  display: flex;
+}
+
+li {
+  margin-right: 10px;
+  scroll-margin-left: 10px;
+}
+
+button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+button span {
+  display: block;
+  padding: 5px 10px;
+  color: blue;
+  text-decoration: underline;
+}
+
+button:hover span {
+  color: rgb(1, 1, 10);
+}
