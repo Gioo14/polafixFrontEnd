@@ -6,12 +6,13 @@ import { FormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 
 import { AppComponent } from './app.component';
-import { SerieComponent } from './components/serie/serie.component';
+import { SeriesComponent } from './components/series/series.component';
 import { UserComponent } from './components/user/user.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SerieUserComponent } from './components/serie-user/serie-user.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LogInComponent } from './components/log-in/log-in.component';
+import { SerieComponent } from './components/serie/serie.component';
 
 @NgModule({
   imports: [
@@ -25,7 +26,7 @@ import { LogInComponent } from './components/log-in/log-in.component';
   ],
   declarations: [
     AppComponent,
-    SerieComponent,
+    SeriesComponent,
     UserComponent,
     SerieUserComponent,
     LogInComponent,

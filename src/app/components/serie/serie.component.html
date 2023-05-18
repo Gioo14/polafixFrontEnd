@@ -1,10 +1,15 @@
-<div>
-  <input type="text" [(ngModel)]="searchTerm" placeholder="Seach" />
-  <ul>
-    <li *ngFor="let letter of alphabet">
-      <button (click)="handleClick(letter)">
-        {{ letter }}
-      </button>
-    </li>
-  </ul>
+<div class="result-section">
+  <div class="serie-cards">
+    <div class="serie-card" *ngFor="let serie of series">
+      <div class="serie-details">
+        <h3 (click)="showDetails(serie)">{{ serie.name }}</h3>
+        <div *ngIf="serie.showDetails">
+          <p><strong>Descrizione:</strong> {{ serie.description }}</p>
+          <p><strong>Nomi attori:</strong> {{ serie.actors }}</p>
+          <p><strong>Nomi creatori:</strong> {{ serie.creators }}</p>
+        </div>
+      </div>
+      <button (click)="addSerie(serie)">AgregarSerie</button>
+    </div>
+  </div>
 </div>

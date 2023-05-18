@@ -1,0 +1,37 @@
+<div class="button-section">
+  <ul>
+    <li *ngFor="let letter of alphabet">
+      <button (click)="handleClick(letter)">
+        {{ letter }}
+      </button>
+    </li>
+  </ul>
+  <div class="spacer"></div>
+  <div class="search-section">
+    <div class="search-container">
+      <input
+        type="text"
+        [(ngModel)]="searchTerm"
+        placeholder="Search"
+        class="search-input"
+      />
+      <button class="search-button" (click)="handleSearch()">Search</button>
+    </div>
+  </div>
+</div>
+
+<div class="result-section">
+  <ul>
+    <li *ngFor="let serie of series">
+      <app-serie
+        [id]="serie.id"
+        [name]="serie.name"
+        [description]="serie.description"
+        [actors]="serie.actors"
+        [creators]="serie.creators"
+        [showDetails]="serie.showDetails"
+      ></app-serie>
+      <button (click)="addSerie(serie)">Aggiungi serie</button>
+    </li>
+  </ul>
+</div>
