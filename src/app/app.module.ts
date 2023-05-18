@@ -12,7 +12,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { SerieUserComponent } from './components/serie-user/serie-user.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LogInComponent } from './components/log-in/log-in.component';
-import { SerieComponent } from './components/serie/serie.component';
 
 @NgModule({
   imports: [
